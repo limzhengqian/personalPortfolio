@@ -190,6 +190,7 @@ code {
   background-color:#393E46;
   color:aliceblue;
   border: none;
+  display: flex;
 }
 
 .socialMedia .list-group-item a{
