@@ -7,6 +7,7 @@ import Home from './Home';
 import Project from './Project';
 import Post from './Post';
 import Footer from './footer';
+import SingleProject from './singleProject';
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/project' element={<Project/>}/>
         <Route path='/posts' element={<Post/>} />
+        <Route path='/:name' element={<SingleProject/>}/>
       </Routes>
       <Footer />
     </div>

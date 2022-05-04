@@ -1,5 +1,5 @@
 export default function Post(){
     return(
-        <div>this is post</div>
+        <div style={{textAlign:"center"}}>Still under development.....</div>
     )
 }

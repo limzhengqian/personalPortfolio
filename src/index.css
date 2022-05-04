@@ -86,6 +86,9 @@ code {
     min-width: 80%;
   }
 
+  .project-container{
+    min-width: 80%;
+  } 
   .skills img{
     max-width:60px;
   }
@@ -190,7 +193,6 @@ code {
   background-color:#393E46;
   color:aliceblue;
   border: none;
-  display: flex;
 }
 
 .socialMedia .list-group-item a{
@@ -222,5 +224,89 @@ footer{
   text-align: center;
   font-size:small;
   opacity: 0.5;
+}
+
+.project-container{
+  width: 50%;
+  margin: auto;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+.project-container .row{
+  text-align: center;
+}
+
+.project-container h2{
+  border-bottom: solid 1px white;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.project-container .singleProjectCard img{
+  aspect-ratio: 2/1;
+  width: 100%;
+  border: solid 1px #222831;
+  border-radius: 20px;
+}
+.project-container .singleProjectCard{
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+.project-container .singleProjectCard h1{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.project-container .singleProjectCard h6{
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+
+.singleProjectContainer{
+  width: 50%;
+  margin: auto;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+     
+}
+.singleProjectContainer .backButton{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.singleProjectContainer .projectTitleDesc{
+  text-align: justify;
+}
+
+.singleProjectContainer .projectDetails{
+  margin-left: 10px;
+}
+
+.singleProjectContainer .projectDetails .imgDiv{
+  margin: auto;
+}
+
+.singleProjectContainer .projectDetails .imgDiv img{
+  aspect-ratio: 2/1;
+  width: 700px;
+  margin-bottom: 20px;
+  border: solid 1px;
+  border-radius: 20px;
+}
+
+
+.singleProjectContainer a{
+  text-decoration: none;
+}
+.singleProjectContainer span{
+  color:#71C9CE;
 }
 
