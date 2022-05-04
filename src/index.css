@@ -92,6 +92,8 @@ code {
   .skills img{
     max-width:60px;
   }
+
+
 }
 
 @media (min-width:1100px){
@@ -296,7 +298,7 @@ footer{
 
 .singleProjectContainer .projectDetails .imgDiv img{
   aspect-ratio: 2/1;
-  width: 700px;
+  width: 90%;
   margin-bottom: 20px;
   border: solid 1px;
   border-radius: 20px;
