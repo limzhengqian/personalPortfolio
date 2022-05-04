@@ -13,9 +13,9 @@ import { useFrame } from '@react-three/fiber'
 export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/amogus.gltf')
-  useFrame((state, delta) => (group.current.rotation.y += 0.01))
+  useFrame((state, delta) => (group.current.rotation.y += 0.005))
   return (
-    <group scale={2} ref={group} {...props} dispose={null}>
+    <group scale={3} ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0.4, 0]}>
           <group rotation={[-Math.PI / 2, 0, 0]}>

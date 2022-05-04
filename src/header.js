@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -15,18 +16,14 @@ function amogusAlive(){
       <header className="header-container card-header">
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
-            <a class="nav-link navName" href="#" onMouseEnter={changeAmogus} onMouseLeave={amogusAlive}>
-                <img src={imgNavHead}></img>
-              Lim Zheng Qian
-            </a>
+          <Link to="/" class="nav-link navName" onMouseEnter={changeAmogus} onMouseLeave={amogusAlive}><img src={imgNavHead}></img>
+              Lim Zheng Qian</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Projects
-            </a>
+          <Link to="/project" class="nav-link">Projects</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Posts</a>
+          <Link to="/posts" class="nav-link">Posts</Link>
           </li>
         </ul>
       </header>

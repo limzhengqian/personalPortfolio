@@ -17,6 +17,7 @@ export default function Module() {
           <Model />
         </Suspense>
       </Canvas>
+      {/* <p>This model is nmopt </p> */}
     </div>
   );
 }
