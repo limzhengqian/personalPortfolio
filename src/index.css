@@ -83,6 +83,12 @@ code {
 }
 
 @media (max-width:470px) {
+.header-container .nav-link{
+  color: aliceblue;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
   .profilePic{
     aspect-ratio: 1/1;
     width: 80%;

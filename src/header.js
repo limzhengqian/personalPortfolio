@@ -20,11 +20,12 @@ function amogusAlive(){
               Lim Zheng Qian</Link>
           </li>
           <li class="nav-item">
-          <Link to="/project" class="nav-link">Projects</Link>
+          <Link to="/project" className="nav-link">Projects</Link>
           </li>
           <li class="nav-item">
-          <Link to="/posts" class="nav-link">Posts</Link>
+          <Link to="/posts" className="nav-link">Posts</Link>
           </li>
+          <a className="nav-link" href="LimZhengQian_Internship.pdf" target="_blank">Resume</a>
         </ul>
       </header>
     </div>
