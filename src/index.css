@@ -63,18 +63,29 @@ code {
   z-index: 9;
 }
 
+
 .profilePic{
   aspect-ratio: 1/1;
-  width: 10vw;
+  width: 40%;
   border: solid 1px white;
   border-radius: 50%;
   /* margin-left: 60px; */
 }
 
-@media (max-width:420px) {
+@media screen and (max-width:1100px) and (min-width:470px){
   .profilePic{
     aspect-ratio: 1/1;
-    width: 20vw;
+    width: 80%;
+    border: solid 1px white;
+    border-radius: 50%;
+    /* margin-left: 60px; */
+  }
+}
+
+@media (max-width:470px) {
+  .profilePic{
+    aspect-ratio: 1/1;
+    width: 80%;
     border: solid 1px white;
     border-radius: 50%;
     /* margin-left: 60px; */
@@ -93,12 +104,16 @@ code {
     max-width:60px;
   }
 
+  .email{
+    font-size: 10px;
+  }
+
 
 }
 
 @media (min-width:1100px){
   .nameIntro .right{
-    margin-left: -250px;
+    margin-left: -200px;
     padding: 30px 0;
   }
 }
@@ -176,8 +191,9 @@ code {
 .skills .skills-logo-container{
   /* border: outset 1px white;
   border-radius: 20px; */
-  border: 2mm ridge rgba(229, 229, 217, 0.6);
+  border: 2mm ridge rgba(165, 165, 157, 0.6);
   border-radius: 20px;
+  background-color: #E3FDFD;
 }
 .skills-logo-container{
   text-align: center;
@@ -310,5 +326,21 @@ footer{
 }
 .singleProjectContainer span{
   color:#71C9CE;
+}
+
+.post-container{
+  width: 50%;
+  margin: auto;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+       animation: fadein 2s;
+}
+
+.post-container h2{
+  border-bottom: solid 1px white;
+  width: fit-content;
+  margin-bottom: 20px;
 }
 

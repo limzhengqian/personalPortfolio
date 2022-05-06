@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 export default function Project() {
   let projectElement;
   const projectObj = [
@@ -28,8 +29,8 @@ export default function Project() {
   const [projectArr, updateProject] = useState([]);
   let navigate = useNavigate();
 
-  function directSingleProject(params){
-    navigate(`/${params}`,{state:{"name":params}});
+  function directSingleProject(params) {
+    navigate(`/${params}`, { state: { name: params } });
   }
   useEffect(() => {
     updateProject(projectObj);
@@ -37,8 +38,14 @@ export default function Project() {
 
   projectElement = projectArr.map((item) => {
     return (
-      <div className="col-6 singleProjectCard" onClick={() => directSingleProject(item.name)}>
-        <img src={item.thumbnail}></img>
+      <div
+        className="col-6 singleProjectCard"
+        onClick={() => directSingleProject(item.name)}
+      >
+       
+          <img src={item.thumbnail}></img>
+   
+
         <h1>{item.name}</h1>
         <h6>{item.desc}</h6>
       </div>
